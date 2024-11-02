@@ -1,0 +1,74 @@
+/* src/components/Sidebar/Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px; /* Un poco más ancho para mayor comodidad */
+  background-color: #222; /* Fondo más oscuro para un look moderno */
+  color: #f1f1f1; /* Texto claro para mejor contraste */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px; /* Más espacio para contenido */
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.5); /* Sombra para efecto de profundidad */
+  border-right: 1px solid #444; /* Borde sutil para separación */
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5em; /* Tamaño más pequeño para no sobrecargar */
+  background: none;
+  border: none;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar-close:hover {
+  color: #00d4ff; /* Color acorde al tema general */
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px; /* Espacio debajo del botón de cerrar */
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #444; /* Línea sutil de separación */
+}
+
+.cart-item p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.sidebar h3 {
+  font-size: 1.8em;
+  color: #00d4ff; /* Título con color distintivo */
+  margin-bottom: 20px;
+}
+
+.sidebar-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.sidebar-link:hover {
+  color: #00d4ff; /* Resalta con el mismo azul de la web */
+}
