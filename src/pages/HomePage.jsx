@@ -7,6 +7,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 function HomePage() {
 
     const starRating = () => {
