@@ -4,11 +4,15 @@ import "./HomePage.css";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
+
 
 
 
 
 function HomePage() {
+
+ 
 
     const starRating = () => {
       return (
@@ -33,9 +37,11 @@ function HomePage() {
         <header className="home-header">
           <h1>Bienvenido a Mi E-commerce</h1>
           <p>Encuentra productos únicos y de calidad para tus necesidades.</p>
-          <a href="/productos" className="home-button">
+          <Link to="/productos" className="home-button">
             Ver Productos
-          </a>
+          </Link>
+            
+          
         </header>
         <section className="home-features">
           <div className="feature-card">
