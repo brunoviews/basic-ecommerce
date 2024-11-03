@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Card from "../components/Card/Card";
 import { motion } from "framer-motion";
 import "./ProductsPage.css";
-import Sidebar from "../components/Sidebar/Sidebar";
 
-function ProductsPage({ addToCart, cart }) {
+
+function ProductsPage({addToCart}) {
   // Datos de los productos
   const products = [
     {
@@ -45,7 +45,7 @@ function ProductsPage({ addToCart, cart }) {
     },
     {
       id: 5,
-      info: ["Pc", "ordenador", "Air", "Macbook"],
+      info: ["pc", "ordenador", "Air", "Macbook"],
       name: "Macbook Air",
       description: "Descripción breve del producto 3.",
       imageUrl:

@@ -1,14 +1,20 @@
 import React from "react";
 import './CartPage.css';
+import { motion } from "framer-motion";
 
 function CartPage({ cartItems, onRemoveItem }) {
     return (
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.5 }}  >
       <div>
         
         <div className="cart-page">
           <h2>Carrito de Compras</h2>
           {cartItems.length > 0 ? (
-            <div>
+            <div className="cart-container">
               {cartItems.map((item, index) => (
                 <div key={index} className="cart-item">
                   <p>{item.name}</p>
@@ -24,6 +30,7 @@ function CartPage({ cartItems, onRemoveItem }) {
         </div>
         
       </div>
+      </motion.div>
     );
   }
   

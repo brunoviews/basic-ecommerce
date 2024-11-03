@@ -2,8 +2,25 @@
 import React from "react";
 import "./HomePage.css";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+
 
 function HomePage() {
+
+    const starRating = () => {
+      return (
+        <div>
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+        </div>
+      );
+    }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -34,19 +51,33 @@ function HomePage() {
           </div>
         </section>
         <section className="home-testimonials">
-        <h2>Testimonios de Nuestros Clientes</h2>
-        <div className="testimonial-card">
-          <p>"Excelente servicio y productos de alta calidad. ¡Volveré a comprar!"</p>
-          <span>- Cliente Satisfecho</span>
-        </div>
-        <div className="testimonial-card">
-          <p>"El envío fue rápido y la atención al cliente inmejorable."</p>
-          <span>- Juan Pérez</span>
-        </div>
-      </section>
+          <h2>Testimonios de Nuestros Clientes</h2>
+          <div className="testimonial-card">
+            <p>
+              "Excelente servicio y productos de alta calidad. ¡Volveré a
+              comprar!"
+            </p>
+            <span>- Julián Gómez</span>
+            <div>{starRating()}</div>
+          </div>
+          <div className="testimonial-card">
+            <p>"El envío fue rápido y la atención al cliente inmejorable."</p>
+            <span>- Juan Pérez</span>
+            <div>{starRating()}</div>
+          </div>
+          <div className="testimonial-card">
+            <p>"Lo recomiendo al 100%."</p>
+            
+            <span>- María Lora</span>
+            <div>{starRating()}</div>
+            
+            
+          </div>
+        </section>
       </div>
     </motion.div>
   );
 }
+
 
 export default HomePage;

@@ -69,7 +69,7 @@
     color: #666;
   }
   
-  /* src/pages/HomePage.css */
+ 
 
 .home-testimonials {
   padding: 40px 20px;
@@ -98,4 +98,13 @@
   margin-top: 10px;
   font-size: 0.9em;
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .home-features {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
 }
