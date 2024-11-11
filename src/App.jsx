@@ -5,7 +5,6 @@ import HomePage from "./pages/HomePage";
 import CartPage from "./pages/CartPage";
 import Navbar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
-import CookieConsent from "react-cookie-consent";
 import { useState } from "react";
 
 function App() {
@@ -39,28 +38,7 @@ function App() {
 
   return (
     <Router>
-      <CookieConsent
-        style={{
-          background: "#333",
-          color: "#fff",
-          fontFamily: "'Poppins', sans-serif",
-          fontSize: "16px",
-          padding: "10px 20px",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-          width: "100%",
-        }}
-        buttonStyle={{
-          background: "#007BFF",
-          color: "#fff",
-          fontSize: "16px",
-          padding: "10px 20px",
-          border: "none",
-          cursor: "pointer",
-          marginRight: "100px",
-        }}
-      >
-        This website uses cookies to enhance the user experience.
-      </CookieConsent>
+      
       {/* Navbar y Footer envuelven todas las rutas */}
       <Navbar links={menuNav} />
       <Routes>

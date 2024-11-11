@@ -1,0 +1,22 @@
+/* Estilos para el botón de Reservar citas */
+button {
+    position: absolute !important;
+    /* Cambia la posición a absoluta */
+    top: 95%;
+    /* Ajusta la posición vertical */
+    left: 90%;
+    /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%);
+    /* Centra el botón */
+    text-align: center;
+
+}
+
+button {
+    background-color: #e82626 !important;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e64a19 !important;
+}
