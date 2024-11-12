@@ -20,3 +20,17 @@ button {
 button:hover {
     background-color: #e64a19 !important;
 }
+
+.Setmore_button_iframe {
+    position: absolute !important;
+    top: 93%;
+    left: 80%;
+
+}
+
+/* Estilos para el botón de Reservar citas */
+
+.calendly-badge-widget {
+    top: 93%;
+    left: 70%;
+}
