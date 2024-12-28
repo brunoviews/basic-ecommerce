@@ -17,7 +17,9 @@ function CartPage({ cartItems, onRemoveItem }) {
             <div className="cart-container">
               {cartItems.map((item, index) => (
                 <div key={index} className="cart-item">
+                  <img src={item.imageUrl} alt={item.name} className="item-img" />
                   <p>{item.name}</p>
+                  
                   <p>Precio: ${item.price}</p>
                   <button className="btn-eliminar" onClick={() => onRemoveItem(item.id)}>Eliminar</button>
                 </div>

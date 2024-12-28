@@ -19,6 +19,8 @@ function App() {
   // Función para agregar un producto al carrito
   const addToCart = (product) => {
     setCart([...cart, product]);
+    alert("Producto añadido al carrito");
+    
   };
 
   // Función para eliminar un producto del carrito

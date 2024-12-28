@@ -4,7 +4,7 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-function Footer({ links = [], text = "© 2024 Bruno Da Silva. Todos los derechos reservados." }) {
+function Footer({ links = [], text = "© 2024 Bruno Da Silva." }) {
   const iconMap = {
     LinkedIn: faLinkedin,
     GitHub: faGithub,

@@ -1,0 +1,116 @@
+.title-review {
+    color: #202d41;
+    font-size: 36px; /* Ajuste de tamaño de fuente */
+    font-weight: 700; /* Ajuste de peso de fuente */
+    line-height: 1.2; /* Ajuste de altura de línea */
+    text-align: center;
+    margin-bottom: 20px; /* Ajuste de margen */
+}
+
+.client-review {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 20px; /* Ajuste de margen */
+}
+
+.client-review__container {
+    display: flex;
+    gap: 16px; /* Ajuste de espacio entre tarjetas */
+    white-space: nowrap;
+    overflow: visible;
+    align-items: center;
+    margin-right: auto;
+}
+
+.client-review__content {
+    margin: 8px; /* Ajuste de margen */
+    min-width: 280px; /* Ajuste de ancho mínimo */
+    max-width: 380px; /* Ajuste de ancho máximo */
+    height: 280px; /* Ajuste de altura */
+    background-color: #f9f9f9; /* Ajuste de color de fondo */
+    border-radius: 10px; /* Ajuste de borde redondeado */
+    padding: 12px; /* Ajuste de relleno */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ajuste de sombra */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;
+    overflow: visible;
+    word-wrap: break-word;
+    margin-bottom: 20px; /* Ajuste de margen */
+}
+
+.client-review__content {
+    box-shadow: 0px 4px 6px rgba(7, 187, 253, 0.3); /* Ajuste de sombra al pasar el ratón */
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.client-review__text {
+    font-size: 1rem;
+    margin-bottom: 10px; /* Ajuste de margen */
+    text-align: center;
+    margin: 40px auto; /* Ajuste de margen */
+}
+
+.client-review__name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333; /* Ajuste de color */
+}
+
+.logo-img {
+    width: 48px; /* Ajuste de ancho */
+    height: 48px; /* Ajuste de altura */
+    border-radius: 50%;
+    display: flex;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Ajuste de espacio */
+    margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .client-review__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .client-review__content {
+        margin-bottom: 16px; /* Ajuste de margen */
+    }
+
+    .client-review__text {
+        font-size: 0.9rem;
+        margin: 36px auto; /* Ajuste de margen */
+    }
+
+    .client-review__name {
+        font-size: 0.8rem;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .client-review__content {
+        min-width: 240px; /* Ajuste de ancho mínimo */
+        max-width: 280px; /* Ajuste de ancho máximo */
+        height: 240px; /* Ajuste de altura */
+    }
+
+    .title-review {
+        color: #202d41;
+        font-size: 28px; /* Ajuste de tamaño de fuente */
+        font-weight: 700; /* Ajuste de peso de fuente */
+        line-height: 1.2; /* Ajuste de altura de línea */
+    }
+}

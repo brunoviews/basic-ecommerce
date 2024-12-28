@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar({ links = [], logoText = "MiEcommerce", onCartClick}) {
+function Navbar({ links = [], logoText = "MiEcommerce"}) {
   const [isOpen, setIsOpen] = useState(false);
 
+  
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

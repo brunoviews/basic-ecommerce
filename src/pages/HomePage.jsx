@@ -5,26 +5,20 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
-
-
-
-
+import ClientReview from "../components/ClientReview/ClientReview";
 
 function HomePage() {
-
- 
-
-    const starRating = () => {
-      return (
-        <div>
-          <FontAwesomeIcon icon={faStar} />
-          <FontAwesomeIcon icon={faStar} />
-          <FontAwesomeIcon icon={faStar} />
-          <FontAwesomeIcon icon={faStar} />
-          <FontAwesomeIcon icon={faStar} />
-        </div>
-      );
-    }
+  const starRating = () => {
+    return (
+      <div>
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} />
+      </div>
+    );
+  };
 
   return (
     <motion.div
@@ -40,8 +34,6 @@ function HomePage() {
           <Link to="/productos" className="home-button">
             Ver Productos
           </Link>
-            
-          
         </header>
         <section className="home-features">
           <div className="feature-card">
@@ -59,34 +51,17 @@ function HomePage() {
         </section>
         <section className="home-testimonials">
           <h2>Testimonios de Nuestros Clientes</h2>
-          <div className="testimonial-card">
-            <p>
-              "Excelente servicio y productos de alta calidad. ¡Volveré a
-              comprar!"
-            </p>
-            <span>- Julián Gómez</span>
-            <div>{starRating()}</div>
-          </div>
-          <div className="testimonial-card">
-            <p>"El envío fue rápido y la atención al cliente inmejorable."</p>
-            <span>- Juan Pérez</span>
-            <div>{starRating()}</div>
-          </div>
-          <div className="testimonial-card">
-            <p>"Lo recomiendo al 100%."</p>
-            
-            <span>- María Lora</span>
-            <div>{starRating()}</div>
-            
-            
-          </div>
+         <ClientReview/>
         </section>
-
-        
+        <section className="home-newsletter">
+          <h2>Suscríbete a Nuestro Boletín</h2>
+          <p>Recibe las últimas noticias y ofertas directamente en tu bandeja de entrada.</p>
+          <input type="email" placeholder="Introduce tu correo electrónico" />
+          <button>Suscribirse</button>
+        </section>
       </div>
     </motion.div>
   );
 }
-
 
 export default HomePage;

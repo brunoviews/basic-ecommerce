@@ -1,4 +1,25 @@
 /* src/components/Card/Card.css */
+.color-success {
+  color: #20b809;
+  font-weight: bold;
+}
+.card-price-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.card-price-discount{
+  font-size: 1rem;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.card-price{
+  font-size: 1.2rem;
+  color : red;
+  font-weight: bold;
+}
 
 .card {
     background-color: #fff;

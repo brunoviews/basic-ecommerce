@@ -1,3 +1,12 @@
+.item-img {
+    width: 100px;
+    height: auto;
+    
+    border-radius: 5px;
+}
+
+
+
 .cart-page {
     display: flex;
     flex-direction: column;
@@ -51,6 +60,12 @@
 .precio-total {
     font-size: 20px;
     font-weight: bold;
+    margin: 25px auto;
+    text-align: center;
+    background-color: rgb(6, 162, 12);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
 }
 
 @media (max-width: 768px) {
